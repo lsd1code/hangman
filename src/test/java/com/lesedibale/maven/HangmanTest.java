@@ -34,8 +34,10 @@ public class HangmanTest {
     assertThrows(RuntimeException.class, () -> hm.hideWord("word-with-dashes"));
   }
 
-  // @Test
-  // void testGetValue() {
-  // assertEquals("hello", hm.getValue());
-  // }
+  @Test
+  void testCheckAndRevealLetter() {
+    assertEquals(
+        "r______",
+        hm.checkAndRevealLetter("_______", "ronaldo", "r"));
+  }
 }

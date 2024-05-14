@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.lesedibale.maven.HangmanTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.109 s <<< FAILURE! - in com.lesedibale.maven.HangmanTest
+testCheckAndRevealLetter  Time elapsed: 0.063 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <r______> but was: <>
+	at com.lesedibale.maven.HangmanTest.testCheckAndRevealLetter(HangmanTest.java:39)
+

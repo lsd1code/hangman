@@ -29,7 +29,20 @@ public class Hangman {
         if (word.contains("-")) {
             throw new RuntimeException("invalid word");
         }
-
         return "_".repeat(word.length());
+    }
+
+    public String checkAndRevealLetter(String hiddenWord, String chosenWord, String letter) {
+        StringBuilder sb = new StringBuilder(hiddenWord);
+
+        for (int i = 0; i < chosenWord.length(); i++) {
+            String currChar = String.valueOf(chosenWord.charAt(i));
+
+            if (currChar.equalsIgnoreCase(letter)) {
+                // ! implementation here
+            }
+        }
+
+        return "";
     }
 }
